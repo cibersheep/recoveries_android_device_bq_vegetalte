@@ -19,6 +19,9 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
+# init
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/bq/vegetalte/kernel
 TARGET_CUSTOM_KERNEL_HEADERS := device/bq/vegetalte/include
